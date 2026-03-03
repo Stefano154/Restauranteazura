@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7FA;
+    color: #0D2B45;
+}
+
+header {
+    background-color: #0D2B45;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #F5F7FA;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #C6A75E;
+}
+
+#portada {
+    background: linear-gradient(rgba(13,43,69,0.8), rgba(13,43,69,0.8)),
+                url("azura.png");
+    background-size: cover;
+    background-position: center 48.5%;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#portada h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#portada p {
+    font-size: 26px;
+    color: #C6A75E;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #1E4F75;
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+#menu .item {
+    display: inline-block;
+    margin: 15px;
+    width: 200px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: 0.3s;
+}
+
+#menu .item:hover {
+    transform: translateY(-5px);
+}
+
+#menu img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#menu p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#galeria img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+}
+
+#contacto {
+    background-color: #1E4F75;
+    color: white;
+}
+
+#contacto h2 {
+    color: #C6A75E;
+}
+
+footer {
+    background: #0D2B45;
+    color: #C6A75E;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
