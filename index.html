@@ -27,7 +27,6 @@
 
 <section id="menu">
     <h2>Nuestro Menú</h2>
-
     <div class="item">
         <h3>Tres Leches</h3>
         <img src="tres leches.jpg">
@@ -81,12 +80,10 @@
             <span>S/16.90</span>
         </div>
     </div>
-
 </section>
 
 <section id="galeria">
     <h2>Galería</h2>
-
     <img src="tres leches.jpg">
     <img src="arroz leche.jpg">
     <img src="turron.jfif">
@@ -99,6 +96,31 @@
     <img src="torta choco.webp">
     <img src="torta helada.jpg">
     <img src="torta zana.jpg">
+
+</section>
+<section id="pedido">
+    <h2>Haz tu Pedido</h2>
+    <form class="formulario" action="https://echo.htmlacademy.ru/">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+        <input type="tel" name="telefono" placeholder="Tu teléfono" required>
+        <input type="text" name="direccion" placeholder="Dirección de entrega" required>
+        <select name="postre">
+            <option value="">Selecciona un postre</option>
+            <option>Tres Leches</option>
+            <option>Picarones</option>
+            <option>Turrón</option>
+            <option>Alfajores</option>
+            <option>Suspiro Limeño</option>
+            <option>Torta Helada</option>
+        </select>
+
+        <input type="number" name="cantidad" placeholder="Cantidad">
+
+        <textarea name="comentario" placeholder="Comentario adicional"></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+
+    </form>
 
 </section>
 
