@@ -35,7 +35,7 @@ header{
     transform:rotate(8deg) scale(1.05);
 }
 
-nav a{
+.header__nav a{
     margin:0 15px;
     text-decoration:none;
     color:white;
@@ -46,7 +46,7 @@ nav a{
 }
 
 /* pseudo-element */
-nav a::after{
+.header__nav a::after{
     content:"";
     width:0%;
     height:3px;
@@ -57,11 +57,11 @@ nav a::after{
     transition:0.3s;
 }
 
-nav a:hover::after{
+.header__nav a:hover::after{
     width:100%;
 }
 
-nav a:hover{
+.header__nav a:hover{
     color:#C6A75E;
 }
 
@@ -208,46 +208,6 @@ footer{
         transform:translateY(0);
     }
 }
-
-/* DISEÑO PARA MÓVILES */
-@media(max-width:768px){
-
-header{
-    flex-direction:column;
-}
-
-nav a{
-    display:block;
-    margin:10px 0;
-}
-
-.logo{
-    width:130px;
-    height:130px;
-}
-
-#portada h1{
-    font-size:38px;
-}
-
-h2{
-    font-size:35px;
-}
-
-.item{
-    width:90%;
-}
-
-.item img{
-    width:100%;
-    height:220px;
-}
-
-#galeria img{
-    width:90%;
-    height:auto;
-}
-}
 /*Pedidos*/
 
 #pedido{
@@ -356,6 +316,7 @@ h2{
 
 .menu__image{
     width:100%;
+    max-width:100%;
     height:220px;
     object-fit:cover;
     border-radius:12px;
@@ -425,4 +386,129 @@ h2{
 .hero__button:hover{
     transform:scale(1.1);
     background:#a98a46;
+}
+
+/* MÓVILES */
+
+@media (max-width: 767px){
+
+    header{
+        flex-direction:column;
+        padding:15px;
+        text-align:center;
+    }
+
+    .header__logo{
+        width:120px;
+        height:120px;
+        margin-bottom:15px;
+    }
+
+    .header__nav{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        width:100%;
+    }
+
+    .header__nav a{
+        margin:0;
+        font-size:18px;
+    }
+
+    #portada{
+        padding:100px 15px;
+    }
+
+    #portada h1{
+        font-size:32px;
+    }
+
+    #portada p{
+        font-size:20px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
+
+    .menu__image{
+        height:220px;
+    }
+
+    .galeria-grid{
+        grid-template-columns:1fr;
+    }
+
+    .galeria-grid img{
+        height:220px;
+    }
+
+    .formulario{
+        width:90%;
+    }
+}
+
+/* TABLETS */
+
+@media (min-width:768px) and (max-width:1199px){
+
+    .header__logo{
+        width:140px;
+        height:140px;
+    }
+
+    .header__nav a{
+        font-size:20px;
+    }
+
+    #portada h1{
+        font-size:42px;
+    }
+
+    h2{
+        font-size:40px;
+    }
+
+    .menu-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .galeria-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* ESCRITORIOS */
+
+@media (min-width:1200px){
+
+    .menu-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .galeria-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
+/* PANTALLAS MUY GRANDES */
+
+@media (min-width:1400px){
+
+    .menu-grid{
+        max-width:1400px;
+    }
+
+    .galeria-grid{
+        max-width:1400px;
+    }
+
+    #portada h1{
+        font-size:60px;
+    }
 }
