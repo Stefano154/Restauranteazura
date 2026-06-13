@@ -394,26 +394,26 @@ footer{
 
     header{
         flex-direction:column;
-        padding:15px;
+        padding:10px;
         text-align:center;
     }
 
     .header__logo{
-        width:120px;
-        height:120px;
-        margin-bottom:15px;
+        width:80px;
+        height:80px;
+        margin-bottom:10px;
     }
 
     .header__nav{
         display:flex;
-        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
         gap:10px;
-        width:100%;
     }
 
     .header__nav a{
+        font-size:16px;
         margin:0;
-        font-size:18px;
     }
 
     #portada{
