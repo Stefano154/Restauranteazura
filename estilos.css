@@ -23,7 +23,7 @@ header{
     box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-.logo{
+.header__logo{
     width:170px;
     height:170px;
     border-radius:50%;
@@ -31,7 +31,7 @@ header{
     transition:0.4s;
 }
 
-.logo:hover{
+.header__logo:hover{
     transform:rotate(8deg) scale(1.05);
 }
 
@@ -68,7 +68,7 @@ nav a:hover{
 /* PORTADA */
 #portada{
     background:linear-gradient(rgba(13,43,69,0.7),rgba(13,43,69,0.7)),
-    url("azura.png");
+    url("images/azura.png");
     background-size:cover;
     background-position:center;
     color:white;
@@ -87,7 +87,7 @@ nav a:hover{
     animation:aparecer 3s ease;
 }
 
-.btn{
+.hero__button{
     display:inline-block;
     margin-top:25px;
     padding:15px 30px;
@@ -98,7 +98,7 @@ nav a:hover{
     transition:0.3s;
 }
 
-.btn:hover{
+.hero__button:hover{
     transform:scale(1.1);
     background:#a98a46;
 }
@@ -115,7 +115,7 @@ h2{
 }
 
 /* MENU */
-.item{
+.menu__item{
     position:relative;
     display:inline-block;
     width:220px;
@@ -127,18 +127,18 @@ h2{
     transition:0.4s;
 }
 
-.item:hover{
+.menu__item:hover{
     transform:translateY(-10px);
 }
 
-.item img{
+.menu__item img{
     width:190px;
     height:190px;
     object-fit:cover;
     border-radius:12px;
 }
 
-.item .info{
+.menu__item .menu__info{
     position:absolute;
     top:0;
     left:0;
@@ -155,11 +155,11 @@ h2{
     transition:0.4s;
 }
 
-.item:hover .info{
+.menu__item:hover .menu__info{
     opacity:1;
 }
 
-.info span{
+.menu__info span{
     color:#C6A75E;
     font-size:22px;
     font-weight:bold;
@@ -296,4 +296,133 @@ h2{
 .formulario button:hover{
     background:#C6A75E;
     transform:scale(1.05);
+}
+
+.gallery__image{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    margin:10px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery__image:hover{
+    transform:scale(1.08) rotate(2deg);
+}
+
+.contact{
+    background:#1E4F75;
+    color:white;
+}
+
+.contact h2{
+    color:#C6A75E;
+}
+
+.footer{
+    background:#0D2B45;
+    color:#C6A75E;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===== GRID MENU ===== */
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.menu__item{
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    display:grid;
+    grid-template-rows:auto auto 1fr;
+
+    transition:0.4s;
+}
+
+.menu__item:hover{
+    transform:translateY(-10px);
+}
+
+.menu__image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.menu__name{
+    margin-bottom:15px;
+}
+
+.menu__info{
+    text-align:center;
+}
+
+.menu__price{
+    color:#C6A75E;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* ===== GRID GALERIA ===== */
+
+.galeria-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.galeria-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.galeria-grid img:hover{
+    transform:scale(1.08);
+}
+
+/* ===== CORRECCION DE CLASES ===== */
+
+.header__logo{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.header__logo:hover{
+    transform:rotate(8deg) scale(1.05);
+}
+
+.hero__button{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 30px;
+    background:#C6A75E;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.hero__button:hover{
+    transform:scale(1.1);
+    background:#a98a46;
 }

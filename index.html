@@ -9,119 +9,103 @@
 
 <body>
 
-<header>
-    <img src="azura.png" alt="Logo del Restaurante" class="logo">
+<header class="header">
+    <img src="images/azura.png" alt="Logo del Restaurante" class="header__logo">
 
-    <nav>
-        <a href="#menu">Menú</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
+    <nav class="header__nav">
+        <a href="#menu" class="header__link">Menú</a>
+        <a href="#galeria" class="header__link">Galería</a>
+        <a href="#contacto" class="header__link">Contacto</a>
+        <a href="pedidos.html" class="hero__button">Haz tu Pedido</a>
     </nav>
 </header>
 
-<section id="portada">
-    <h1>Bienvenidos a la Pastelería Azura</h1>
-    <p>.</p>
-    <a href="#menu" class="btn">Ver Menú</a>
+<section id="portada" class="hero">
+    <h1 class="hero__title">Bienvenidos a la Pastelería Azura</h1>
+    <p class="hero__text">Postres artesanales peruanos</p>
+    <a href="#menu" class="hero__button">Ver Menú</a>
 </section>
 
 <section id="menu">
-    <h2>Nuestro Menú</h2>
-    <div class="item">
-        <h3>Tres Leches</h3>
-        <img src="tres leches.jpg">
-        <div class="info">
-            <p>Suave, cremoso e irresistible.</p>
-            <span>S/10.90</span>
-        </div>
-    </div>
+    <h2>Menú</h2>
 
-    <div class="item">
-        <h3>Picarones</h3>
-        <img src="picarones.avif">
-        <div class="info">
-            <p>Crujientes con miel artesanal.</p>
-            <span>S/12.90</span>
-        </div>
-    </div>
+    <div class="menu-grid">
 
-    <div class="item">
-        <h3>Turrón</h3>
-        <img src="turron.jfif">
-        <div class="info">
-            <p>Dulce tradicional peruano.</p>
-            <span>S/14.90</span>
+        <div class="menu__item">
+            <h3 class="menu__name">Tres Leches</h3>
+            <img src="images/tres leches.jpg" class="menu__image">
+            <div class="menu__info">
+                <p>Suave, cremoso e irresistible.</p>
+                <span class="menu__price">S/10.90</span>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <h3>Alfajores</h3>
-        <img src="alfajores.jpg">
-        <div class="info">
-            <p>Rellenos de manjar blanco.</p>
-            <span>S/18.90</span>
+        <div class="menu__item">
+            <h3 class="menu__name">Picarones</h3>
+            <img src="images/picarones.avif" class="menu__image">
+            <div class="menu__info">
+                <p>Crujientes con miel artesanal.</p>
+                <span class="menu__price">S/12.90</span>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <h3>Suspiro Limeño</h3>
-        <img src="suspiro limeño.jpg">
-        <div class="info">
-            <p>Manjar blanco y merengue.</p>
-            <span>S/13.90</span>
+        <div class="menu__item">
+            <h3 class="menu__name">Turrón</h3>
+            <img src="images/turron.jfif" class="menu__image">
+            <div class="menu__info">
+                <p>Dulce tradicional peruano.</p>
+                <span class="menu__price">S/14.90</span>
+            </div>
         </div>
-    </div>
 
-    <div class="item">
-        <h3>Torta Helada</h3>
-        <img src="torta helada.jpg">
-        <div class="info">
-            <p>Bizcocho con gelatina y crema.</p>
-            <span>S/16.90</span>
+        <div class="menu__item">
+            <h3 class="menu__name">Alfajores</h3>
+            <img src="images/alfajores.jpg" class="menu__image">
+            <div class="menu__info">
+                <p>Rellenos de manjar blanco.</p>
+                <span class="menu__price">S/18.90</span>
+            </div>
         </div>
+
+        <div class="menu__item">
+            <h3 class="menu__name">Suspiro Limeño</h3>
+            <img src="images/suspiro limeño.jpg" class="menu__image">
+            <div class="menu__info">
+                <p>Manjar blanco y merengue.</p>
+                <span class="menu__price">S/13.90</span>
+            </div>
+        </div>
+
+        <div class="menu__item">
+            <h3 class="menu__name">Torta Helada</h3>
+            <img src="images/torta helada.jpg" class="menu__image">
+            <div class="menu__info">
+                <p>Bizcocho con gelatina y crema.</p>
+                <span class="menu__price">S/16.90</span>
+            </div>
+        </div>
+
     </div>
 </section>
-
 <section id="galeria">
     <h2>Galería</h2>
-    <img src="tres leches.jpg">
-    <img src="arroz leche.jpg">
-    <img src="turron.jfif">
-    <img src="picarones.avif">
-    <img src="crema volteada.jpg">
-    <img src="alfajores.jpg">
-    <img src="queso helado.jfif">
-    <img src="suspiro limeño.jpg">
-    <img src="cupcake.jfif">
-    <img src="torta choco.webp">
-    <img src="torta helada.jpg">
-    <img src="torta zana.jpg">
 
-</section>
-<section id="pedido">
-    <h2>Haz tu Pedido</h2>
-    <form class="formulario" action="https://echo.htmlacademy.ru/">
-        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
-        <input type="tel" name="telefono" placeholder="Tu teléfono" required>
-        <input type="text" name="direccion" placeholder="Dirección de entrega" required>
-        <select name="postre">
-            <option value="">Selecciona un postre</option>
-            <option>Tres Leches</option>
-            <option>Picarones</option>
-            <option>Turrón</option>
-            <option>Alfajores</option>
-            <option>Suspiro Limeño</option>
-            <option>Torta Helada</option>
-        </select>
+    <div class="galeria-grid">
 
-        <input type="number" name="cantidad" placeholder="Cantidad">
+        <img src="images/tres leches.jpg">
+        <img src="images/arroz leche.jpg">
+        <img src="images/turron.jfif">
+        <img src="images/picarones.avif">
+        <img src="images/crema volteada.jpg">
+        <img src="images/alfajores.jpg">
+        <img src="images/queso helado.jfif">
+        <img src="images/suspiro limeño.jpg">
+        <img src="images/cupcake.jfif">
+        <img src="images/torta choco.webp">
+        <img src="images/torta helada.jpg">
+        <img src="images/torta zana.jpg">
 
-        <textarea name="comentario" placeholder="Comentario adicional"></textarea>
-
-        <button type="submit">Enviar Pedido</button>
-
-    </form>
-
+    </div>
 </section>
 
 <section id="contacto">
